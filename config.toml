@@ -1,48 +1,54 @@
-baseurl = "/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-theme = "hugo-theme-hello-friend"
-paginate = 5
+title = "Hugo LAMP"
+theme = "hugo-lamp"
+googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "post"
-  # "light" or "dark"
-  defaultTheme = "dark"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # Enable to show reading time in minutes for posts
-  showReadingTime = false
+  subtitle = "Light responsive AMP theme"
+  author = "Huy Nguyen"
+  logo = "/img/ModulFotoShop_1145.jpg"
+  description = "A light responsive Hugo AMP theme for blogger"
+  paginate = 10
 
-[languages]
-  [languages.en]
-    title = "Hello Friend"
-    subtitle = "A simple theme for Hugo"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
+  # Publisher
+  ## adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense
+  adsenseSlot = "XXX"                   # Required slot to display ads
+  adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
-    [languages.en.params.logo]
-      logoText = "hello friend"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  # SEO configs
+  seotitle = "Hugo Blog Title (SEO Version)"
+  googleSiteVerification = "google_site_verification_code"    # Google Webmaster
+  msValidate = "bing_site_verification_code"                  # Bing Webmaster
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+  # Social networks
+  email = "name@domain.com"
+  github = "huyb1991"
+  twitter = "twitter_username"
+  linkedin = "linkedin_username"
+  facebook = "facebook_username"
+  google = "googleplus_id_number"
+  instagram = "instagram_username"
+  youtube = "youtube_username"
+  dribbble = "dribbble_username"
+  reddit = "reddit_username"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[[menu.main]]
+  name = "Hugo"
+  weight = 1
+  identifier = "hugo"
+  url = "/hugo/"
+[[menu.main]]
+  name = "AMP Project"
+  weight = 2
+  identifier = "amp"
+  url = "/amp/"
+[[menu.main]]
+  name = "Tags"
+  weight = 3
+  identifier = "tags"
+  url = "/tags/"
