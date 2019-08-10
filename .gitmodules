@@ -1,3 +1,6 @@
 [submodule "themes/hugo-minimal"]
 	path = themes/hugo-minimal
 	url = https://github.com/calintat/minimal.git
+[submodule "themes/hugo-friendly"]
+	path = themes/hugo-friendly
+	url = https://github.com/panr/hugo-theme-hello-friend.git
