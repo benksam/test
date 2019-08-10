@@ -4,3 +4,6 @@
 [submodule "themes/hugo-friendly"]
 	path = themes/hugo-friendly
 	url = https://github.com/panr/hugo-theme-hello-friend.git
+[submodule "themes/hugo-theme-hello-friend"]
+	path = themes/hugo-theme-hello-friend
+	url = https://github.com/panr/hugo-theme-hello-friend.git
